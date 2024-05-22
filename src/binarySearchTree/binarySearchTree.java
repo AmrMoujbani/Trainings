@@ -30,5 +30,17 @@ public class binarySearchTree {
         return root;
     }
 
+    Node searchTreeRecurCall (int value){
+        return searchTreeRecur(root, value);
+    }
+    private Node searchTreeRecur (Node root, int value){
+        if (root==null || root.value==value) return root;
+        if (root.value>value) {
+            return searchTreeRecur(root.left, value);
+        }
+        else {
+            return searchTreeRecur(root.right, value);
+        }
+    }
 
 }

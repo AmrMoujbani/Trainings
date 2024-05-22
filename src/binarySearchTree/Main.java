@@ -7,7 +7,14 @@ public class Main {
         binarySearchTree.insertRecurCall(21);
         binarySearchTree.insertRecurCall(10);
         binarySearchTree.insertRecurCall(35);
-        System.out.println(binarySearchTree.root.right.value);
+        System.out.println(binarySearchTree.root.left.value);
+
+        binarySearchTree.Node result =binarySearchTree.searchTreeRecurCall(10);
+        if (result!=null){
+            System.out.println("The search value is found!");
+        } else System.out.println("The search value is not found!");
+
+
 
     }
 }
